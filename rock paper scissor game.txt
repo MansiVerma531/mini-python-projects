@@ -1,0 +1,30 @@
+import random
+items=["rock","paper","scissor"]
+print("choose one from:\n rock \n paper \n scissor\n")
+
+user_choice=input("enter your choice")
+computer_choice=random.choice(items)
+print("computer choice is {}".format(computer_choice))
+
+if user_choice==computer_choice:
+    print("tieeeeeeeeeeeeeeeeeeeeeeeeeeee")
+elif user_choice=="rock":
+    if computer_choice=="scissor":
+        print("rock wins,u win")
+    else:
+        print("comp winss")
+elif user_choice=="rock":
+    if computer_choice=="paper":
+        print("paper wins,comp wins")
+    else:
+        print("rock wins,userrr wins")
+elif user_choice=="paper":
+    if computer_choice=="scissor":
+        print("scissor wins,comp wins")
+    else:
+        print("userrr wins")
+else:
+    print("invalid choice")
+print("thank u for playing!!")
+
+    
